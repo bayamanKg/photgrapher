@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photogrophy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body class="page__body">
+    <!-- ///////////// Шапка сайта \\\\\\\\\\\\\ -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo">
+          <img
+            src="./img/logo.svg"
+            width="110px"
+            height="50px"
+            loading="lazy"
+            width="69"
+            height="24"
+          />
+        </a>
+        <nav class="nav" id="nav">
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Client reviews</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact me</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="modal__btn" class="btn header__btn btn-reset">
+          Schedule a call
+        </button>
+        <button class="burger btn-reset" id="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ///////////// Тело сайта \\\\\\\\\\\\\ -->
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container grid">
+          <!-- Левая сторона -->
+          <div class="hero__left">
+            <div class="hero__text">Pro photogropher</div>
+            <div class="hero__level">
+              Let`s take your photographs to next level
+            </div>
+          </div>
+
+          <!-- Правая сторона -->
+          <div class="hero__content">
+            <h1 class="visually-hidden">Jessie Photogropher Site</h1>
+            <div class="hero__hello">
+              Hello there, Nice to meet you. I am <span>Jessie</span>
+            </div>
+            <p class="hero__desc">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet. Amet minim mollit
+              non deserunt ullamco est sit aliqua dolor do amet sint.
+            </p>
+            <div class="latest-shots hero__shots">
+              <div class="latest-shots__header">
+                <h2 class="latest-shots__title">Latest shots</h2>
+                <a class="latest-shots__all" href="#">View All</a>
+              </div>
+
+              <!-- Слайдер -->
+              <div class="latest-shots__content">
+                <div class="swiper" id="gallery">
+                  <div class="swiper-wrapper">
+                    <!-- Первый слайд -->
+                    <div class="swiper-slide">
+                      <a href="./img/1_2x.jpg" class="latest-shots__link">
+                        <img
+                          src="./img/1_2x.jpg"
+                          width="250px"
+                          height="150px"
+                          loading="lazy"
+                          class="latest-shots__img"
+                        />
+                      </a>
+                    </div>
+
+                    <!-- Второй слайд -->
+                    <div class="swiper-slide">
+                      <a href="./img/2_2x.jpg" class="latest-shots__link">
+                        <img
+                          src="./img/2_2x.jpg"
+                          width="250px"
+                          height="150px"
+                          loading="lazy"
+                          class="latest-shots__img"
+                        />
+                      </a>
+                    </div>
+
+                    <!-- Третий слайд -->
+                    <div class="swiper-slide">
+                      <a href="./img/3_2x.jpg" class="latest-shots__link">
+                        <img
+                          src="./img/3_2x.jpg"
+                          width="250px"
+                          height="150px"
+                          loading="lazy"
+                          class="latest-shots__img"
+                        />
+                      </a>
+                    </div>
+
+                    <!-- Четвертый слайд -->
+                    <div class="swiper-slide">
+                      <a href="./img/1_2x.jpg" class="latest-shots__link">
+                        <img
+                          src="./img/1_2x.jpg"
+                          width="250px"
+                          height="150px"
+                          loading="lazy"
+                          class="latest-shots__img"
+                        />
+                      </a>
+                    </div>
+
+                    <!-- Пятый слайд -->
+                    <div class="swiper-slide">
+                      <a href="./img/2_2x.jpg" class="latest-shots__link">
+                        <img
+                          src="./img/2_2x.jpg"
+                          width="250px"
+                          height="150px"
+                          loading="lazy"
+                          class="latest-shots__img"
+                        />
+                      </a>
+                    </div>
+
+                    <!-- Шестой слайд -->
+                    <div class="swiper-slide">
+                      <a href="./img/3_2x.jpg" class="latest-shots__link">
+                        <img
+                          src="./img/3_2x.jpg"
+                          width="250px"
+                          height="150px"
+                          loading="lazy"
+                          class="latest-shots__img"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="latest-shots__nav">
+                <button
+                  class="latest-shoots__btn btn-reset"
+                  aria-label="Slide left"
+                  id="gallery-prev"
+                >
+                  <svg
+                    width="26"
+                    height="16"
+                    viewBox="0 0 26 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M25.25 8.00001C25.25 7.76794 25.1578 7.54538 24.9937 7.38129C24.8296 7.21719 24.6071 7.12501 24.375 7.12501H3.73725L9.2445 1.61951C9.32585 1.53815 9.39039 1.44157 9.43442 1.33528C9.47844 1.22898 9.50111 1.11506 9.50111 1.00001C9.50111 0.884955 9.47844 0.77103 9.43442 0.664736C9.39039 0.558442 9.32585 0.46186 9.2445 0.380506C9.16315 0.299153 9.06657 0.234619 8.96027 0.190591C8.85398 0.146563 8.74005 0.123901 8.625 0.123901C8.50995 0.123901 8.39602 0.146563 8.28973 0.190591C8.18343 0.234619 8.08685 0.299153 8.0055 0.380506L1.0055 7.38051C0.924014 7.46179 0.859364 7.55834 0.815253 7.66465C0.771142 7.77095 0.748436 7.88491 0.748436 8.00001C0.748436 8.1151 0.771142 8.22906 0.815253 8.33536C0.859364 8.44167 0.924014 8.53823 1.0055 8.61951L8.0055 15.6195C8.08685 15.7009 8.18343 15.7654 8.28973 15.8094C8.39602 15.8535 8.50995 15.8761 8.625 15.8761C8.74005 15.8761 8.85398 15.8535 8.96027 15.8094C9.06657 15.7654 9.16315 15.7009 9.2445 15.6195C9.32585 15.5382 9.39039 15.4416 9.43442 15.3353C9.47844 15.229 9.50111 15.1151 9.50111 15C9.50111 14.885 9.47844 14.771 9.43442 14.6647C9.39039 14.5584 9.32585 14.4619 9.2445 14.3805L3.73725 8.87501H24.375C24.6071 8.87501 24.8296 8.78282 24.9937 8.61872C25.1578 8.45463 25.25 8.23207 25.25 8.00001Z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  class="latest-shoots__btn btn-reset"
+                  aria-label="Slide ritght"
+                  id="gallery-next"
+                >
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M1.75001 14C1.75001 13.7679 1.84219 13.5454 2.00629 13.3813C2.17038 13.2172 2.39294 13.125 2.62501 13.125H23.2628L17.7555 7.61951C17.6742 7.53815 17.6096 7.44157 17.5656 7.33528C17.5216 7.22898 17.4989 7.11506 17.4989 7.00001C17.4989 6.88495 17.5216 6.77103 17.5656 6.66474C17.6096 6.55844 17.6742 6.46186 17.7555 6.38051C17.8369 6.29915 17.9334 6.23462 18.0397 6.19059C18.146 6.14656 18.26 6.1239 18.375 6.1239C18.4901 6.1239 18.604 6.14656 18.7103 6.19059C18.8166 6.23462 18.9132 6.29915 18.9945 6.38051L25.9945 13.3805C26.076 13.4618 26.1406 13.5583 26.1848 13.6646C26.2289 13.771 26.2516 13.8849 26.2516 14C26.2516 14.1151 26.2289 14.2291 26.1848 14.3354C26.1406 14.4417 26.076 14.5382 25.9945 14.6195L18.9945 21.6195C18.9132 21.7009 18.8166 21.7654 18.7103 21.8094C18.604 21.8535 18.4901 21.8761 18.375 21.8761C18.26 21.8761 18.146 21.8535 18.0397 21.8094C17.9334 21.7654 17.8369 21.7009 17.7555 21.6195C17.6742 21.5382 17.6096 21.4416 17.5656 21.3353C17.5216 21.229 17.4989 21.1151 17.4989 21C17.4989 20.885 17.5216 20.771 17.5656 20.6647C17.6096 20.5584 17.6742 20.4619 17.7555 20.3805L23.2628 14.875H2.62501C2.39294 14.875 2.17038 14.7828 2.00629 14.6187C1.84219 14.4546 1.75001 14.2321 1.75001 14Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <script>
+      document.querySelector(".burger").addEventListener("click", () => {
+        document.querySelector(".burger").classList.toggle("burger--active");
+      });
+    </script> -->
+    <div class="modal-parent">
+      <div class="modal">
+        <h2 class="modal__title">Schedule a call</h2>
+        <form class="form">
+          <label class="form__field">
+            <span class="form__text">Name:</span>
+            <input class="form__input" type="text" name="name" />
+          </label>
+          <label class="form__field">
+            <span class="form__text">Phone:</span>
+            <input class="form__input" type="tel" name="tel" />
+          </label>
+          <button class="form__btn btn-reset">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
